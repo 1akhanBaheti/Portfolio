@@ -5,7 +5,7 @@ import GithubIcon from "../Icons/github.jsx";
 import LeetcodeIcon from "../Icons/leetcode.jsx";
 import LogoIcon from "../Icons/logo.jsx";
 import {resumeDrive} from "../constants.js";
-
+import {Link} from 'react-scroll';
 function Navbar() {
   let [show, setShow] = useState(true);
   let [showMenu, setShowMenu] = useState(false);
@@ -36,6 +36,7 @@ function Navbar() {
           "flex h-[100vh] w-[100%] backdrop-blur-[5px] transition-all  duration-300 fixed z-[5] " +
           (showMenu ? "ml-[0] " : "ml-[100%]")
         }
+        onClick={() => setShowMenu(!showMenu)}
       >
         <div className=" h-[100vh] w-[300px] ml-auto bg-lightNavy ">
           <button
@@ -61,15 +62,15 @@ function Navbar() {
           <div className="flex flex-col justify-center items-center h-[100vh]">
             {NavbarButton.map((item, index) => {
               return (
-                <a
+                <Link
                   onClick={() => setShowMenu(!showMenu)}
-                  href={"#" + item}
-                  id={index}
+                  to={item}
+                  key={index}
                   className="text-lightestSlate flex hover:text-secondaryColor text-[19px] mb-[50px]"
                 >
                   <h2 className="text-secondaryColor mr-[4px] ">{`${index}.`}</h2>
                   {item}
-                </a>
+                </Link>
               );
             })}
             <a rel="noopener noreferrer" target="_blank" href={resumeDrive}>
@@ -82,24 +83,23 @@ function Navbar() {
       </div>
       <nav
         className={
-          "flex justify-between bg-primaryColor backdrop-blur-lg  w-full transition-all duration-[400ms] items-center md:pr-[20px] fixed  py-[10px]" +
-          (show === true ? " mt-[0px] z-[1] " : " mt-[-150px]") + (scrollY!==0?" shadow-xl ":" py-[25px]")
+          "flex justify-between bg-primaryColor backdrop-blur-lg  w-full transition-all duration-[300ms] items-center md:pr-[20px] fixed top-0  py-[10px] ease-in" +
+          (show === true ? " translate-y-[0%]" : " translate-y-[-100%]") + (scrollY!==0?" shadow-xl ":" py-[25px]")
         }
       >
         <LogoIcon />
         <ul className="flex  opacity-0  w-[0px] overflow-hidden md:opacity-100 md:min-w-fit">
           {NavbarButton.map((NavbarButton, index) => {
             return (
-              <a
-             
+              <Link
                 key={NavbarButton}
-                className="mr-[35px] flex py-3 text-lightestSlate text-[15px] transition-all hover:text-secondaryColor"
-                href={"#" + NavbarButton}
+                className="mr-[35px] hover:cursor-pointer flex py-3 text-lightestSlate text-[15px] transition-all hover:text-secondaryColor"
+                to={ NavbarButton}
               >
                 <h2 className="text-secondaryColor mr-[4px]">{`${index}.`}</h2>
 
                 {NavbarButton}
-              </a>
+              </Link>
             );
           })}
 
