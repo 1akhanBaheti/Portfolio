@@ -15,7 +15,7 @@ function Work() {
 ];
   const [currIndex,setIndex]=useState(0);
   return (
-    <div className="bg-primaryColor pb-[200px] pt-[50px]" id="Experience">
+    <div className="bg-primaryColor pb-[200px] pt-[100px]" id="Experience">
      <div className="flex font-sans md:max-w-[640px] md:mx-auto mx-[25px] text-lightSlate md:text-[28px] text-[24px] font-bold items-center">
      Where I've Worked
     <div className="h-[0.5px] ml-[15px] bg-darkSlate w-1/4 sm:w-[200px]"></div>

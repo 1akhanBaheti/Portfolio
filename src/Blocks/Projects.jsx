@@ -79,7 +79,7 @@ function ProjectCard() {
           <a rel="noopener noreferrer" target="_blank" className="h-[23px] w-[23px] mt-[30px] transition-all duration-300" href={element.github} title="Github">
           <GithubIcon />
         </a>
-        <a rel="noopener noreferrer" target="_blank" className="h-[25px] transition-all duration-300 w-[25px] ml-[30px] mt-[30px]"  href={element.github} title="APK">
+        <a rel="noopener noreferrer" target="_blank" className="h-[25px] transition-all duration-300 w-[25px] ml-[30px] mt-[30px]"  href={element.apk} title="APK">
           <RedirectIcon />
         </a>
         </div>
