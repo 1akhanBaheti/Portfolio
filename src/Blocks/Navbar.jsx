@@ -83,8 +83,8 @@ function Navbar() {
       </div>
       <nav
         className={
-          "flex justify-between bg-primaryColor backdrop-blur-lg  w-full transition-all duration-[300ms] items-center md:pr-[20px] fixed top-0  py-[10px] ease-in" +
-          (show === true ? " translate-y-[0%]" : " translate-y-[-100%]") + (scrollY!==0?" shadow-xl ":" py-[25px]")
+          "flex justify-between bg-primaryColor backdrop-blur-lg  w-full transition-all duration-[400ms] items-center md:pr-[20px] fixed py-[10px] " +
+          (show === true ? " z-[5] translate-y-[0%]" : " translate-y-[-100%]") + (scrollY!==0?" shadow-2xl":" py-[25px]")
         }
       >
         <LogoIcon />
