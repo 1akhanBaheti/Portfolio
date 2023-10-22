@@ -1,8 +1,9 @@
-import myCred from "../svg/my_cred.svg";
-import shopX from "../svg/shopX.svg";
-import fireChat from "../svg/firechat.svg";
-import GithubIcon from "../Icons/github";
-import RedirectIcon from "../Icons/redirect";
+import myCred from "../../public/svg/my_cred.svg";
+import shopX from "../../public/svg/shopX.svg";
+import fireChat from "../../public/svg/firechat.svg";
+import GithubIcon from "../icons/github";
+import RedirectIcon from "../icons/redirect";
+import Image from "next/image";
 var projects = [
   {
     title: "ShopX",
@@ -69,7 +70,9 @@ function ProjectCard() {
         <div className="mt-[30px]">
           {element.technologies.map((element, index) => {
             return (
-              <div className="border-[0px] max-w-fit bg-hoverTeal inline-block mb-[10px] border-secondaryColor rounded-[2px] text-lightSlate mr-[10px] px-[10px] py-[3px] text-[15px]">
+              <div
+              key={element}
+              className="border-[0px] max-w-fit bg-hoverTeal inline-block mb-[10px] border-secondaryColor rounded-[2px] text-lightSlate mr-[10px] px-[10px] py-[3px] text-[15px]">
                 {element}
               </div>
             );
@@ -100,7 +103,7 @@ function Project() {
           {projects.map((item, index) => {
             return (
               <div
-                key={index}
+                key={item.title}
                 className="w-[100%] relative flex justify-items-center pb-[150px]"
               >
                 <div
@@ -109,11 +112,11 @@ function Project() {
                     (index % 2 === 1 ? "ml-auto" : "mr-auto")
                   }
                 >
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.image}
                     className="object-cover h-auto border-[0px] rounded-[4px] border-lightNavy max-h-[350px] w-[100%] "
-                  ></img>
+                  />
                 </div>
 
                 {/* <div className="absolute h-[350px] w-[60%] left-0 bg-secondaryColor opacity-10 hover:bg-transparent"></div> */}
@@ -147,7 +150,9 @@ function Project() {
                     <div className="mt-[10px]">
                       {item.technologies.map((element, index2) => {
                         return (
-                          <div className={"border-[0px] max-w-fit inline-block mb-[5px] border-secondaryColor rounded-[2px] text-lightestSlate  py-[3px] text-[15px]" +(index%2===0?" ml-[20px]":" mr-[20px]")}>
+                          <div
+                          key={index2}
+                          className={"border-[0px] max-w-fit inline-block mb-[5px] border-secondaryColor rounded-[2px] text-lightestSlate  py-[3px] text-[15px]" +(index%2===0?" ml-[20px]":" mr-[20px]")}>
                             {element}
                           </div>
                         );

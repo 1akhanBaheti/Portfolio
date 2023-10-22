@@ -1,9 +1,13 @@
+import Image from "next/image";
+import leetcode from "../../public/svg/leetcode.svg";
+
 function LeectodeIcon() {
   return (
-    <div className="fill-lightestSlate hover:fill-secondaryColor transition-all duration-300">
+    <div className="text-lightestSlate hover:text-secondaryColor transition-all duration-300">
       <svg
+       fill="currentColor"
         xmlns="http://www.w3.org/2000/svg"
-        enable-background="new 0 0 24 24"
+        enableBackground="new 0 0 24 24"
         viewBox="0 0 24 24"
       >
         <path d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z"></path>

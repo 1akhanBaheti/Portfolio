@@ -13,7 +13,7 @@ function Homepage() {
           I build things for web & mobile.
         </h6>
         <div className=" text-darkSlate md:text-[17px] mt-[25px] lg:mr-[35%]">
-          I’m a 20 year old undergraduate computer sceince student from India
+          I’m a 20 year old undergraduate computer science student from India
           pursuing BTech at the SSIPMT, Raipur. I’m passionate about building
           apps and learning new technologies. Currently, I’m focused on building
           great products at{" "}

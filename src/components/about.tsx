@@ -1,16 +1,21 @@
+import Image from "next/image";
 import profile from "../profile.jpg";
+
 function About() {
   var techStack = [
     "C++",
     "Dart",
     "Javascript",
+    "Typescript",
     "HTML",
     "CSS",
     "Tailwind",
     "Flutter",
+    "Django",
     "Node js",
     "Express js",
     "React",
+    "Next js",
     "Firebase", 
     "Github",
   ];
@@ -27,7 +32,7 @@ function About() {
         About me
         <div className="h-[1px] bg-darkSlate w-[50%] ml-[20px]"></div>
       </div> */}
-            <p className="text-darkSlate text-[17px] mt-[50px]">
+            <p className="text-darkSlate text-[17px] mt-[50px] text-justify">
               Hello! My name is Lakhan, and I enjoy creating things that live on
               the internet. My interest in app development started in 2020 when
               I pursued a BTech in computer science and learned about
@@ -61,7 +66,7 @@ function About() {
             </div>
           </div>
           <div className="mt-[60px] mx-auto md:mx-0">
-            <img src={profile} height="300px" width="350px" alt={profile} />
+            <Image src={profile} alt='Avatar' height={350} width={350}/>
           </div>
         </div>
       </div>
