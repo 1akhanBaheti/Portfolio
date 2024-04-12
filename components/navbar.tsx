@@ -116,7 +116,7 @@ function Navbar() {
       </nav>
 
       <div className="fixed bottom-0 lg:ml-[35px] opacity-0  md:opacity-100">
-        <div className="hover:pb-[8px] flex justify-center mb-[15px] transition-all duration-200">
+        <div className="hover:pb-[8px] justify-center flex mb-[15px] transition-all duration-200">
           <a
             rel="noopener noreferrer"
             target="_blank"

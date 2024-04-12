@@ -1,0 +1,21 @@
+.dark {
+  --primary-100: rgb(55, 48, 163);
+  --primary-200: rgb(35, 95, 231);
+
+  --background-100: rgb(18, 18, 18);
+
+  --text-100: rgb(249, 250, 251);
+  --text-200: #8d9e8d;
+  --text-200: rgb(141, 158, 141);
+}
+
+.light {
+  --primary-100: rgb(55, 48, 163);
+  --primary-200: rgb(35, 95, 231);
+
+  --background-100: rgb(238, 242, 229);
+
+  --text-100: rgb(33, 26, 29);
+  --text-200: #8d9e8d;
+  --text-200: rgb(141, 158, 141);
+}

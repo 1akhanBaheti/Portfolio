@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./theme.css");
+
+@font-face {
+  font-family: "Trap Black";
+  src: url("../../public/fonts/Trap-Black.otf");
+}
+
+:root {
+  scroll-behavior: smooth;
+  --foreground-rgb: 0, 0, 0;
+  background-color: var(--background-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccd6f6;
+  border-radius: 20px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #8892b0;
+}
