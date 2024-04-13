@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "@/app/styles/globals.css";
 import { ThemeProvider } from "next-themes";
-
-const inter = Inter({ subsets: ["latin"] });
+import "@/app/styles/globals.css";
+// components
+import { Header } from "@/components/header/header";
+import { Footer } from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: "Lakhan's Portfolio",
@@ -29,7 +30,11 @@ export default function RootLayout({
         />
       </head>
       <body className={`h-full`}>
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
+        <ThemeProvider attribute="class">
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

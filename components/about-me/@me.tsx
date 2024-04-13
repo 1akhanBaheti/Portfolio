@@ -1,26 +1,15 @@
 import Image from "next/image";
-import profile from "../profile.jpg";
+// assets
+import profile from "@/public/profile.jpg";
+// constants
+import { techStack } from "@/constants";
 
 function About() {
-  var techStack = [
-    "C++",
-    "Dart",
-    "Javascript",
-    "Typescript",
-    "HTML",
-    "CSS",
-    "Tailwind",
-    "Flutter",
-    "Django",
-    "Node js",
-    "Express js",
-    "React",
-    "Next js",
-    "Firebase", 
-    "Github",
-  ];
   return (
-    <div className="bg-primaryColor pb-[200px] pt-[100px] " id="About">
+    <div
+      className="min-h-[100vh] pb-[200px] pt-[100px] "
+      id="About"
+    >
       <div className="text-white">
         <div className="flex font-sans lg:max-w-[850px] md:w-[80%] lg:mx-auto mx-[25px] md:mx-auto text-lightSlate md:text-[28px] text-[24px] font-bold items-center">
           About me
@@ -66,7 +55,7 @@ function About() {
             </div>
           </div>
           <div className="mt-[60px] mx-auto md:mx-0">
-            <Image src={profile} alt='Avatar' height={350} width={350}/>
+            <Image src={profile} alt="Avatar" height={350} width={350} />
           </div>
         </div>
       </div>

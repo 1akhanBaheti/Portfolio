@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ChakraIcon = ({ className }: { className: string }) => {
   return (
     <svg
