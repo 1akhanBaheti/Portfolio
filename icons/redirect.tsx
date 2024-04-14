@@ -4,7 +4,7 @@ function RedirectIcon({
   className,
   href,
 }: {
-  className: string;
+  className?: string;
   href: string;
 }) {
   return (

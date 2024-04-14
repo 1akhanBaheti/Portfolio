@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
           best to get back to you!
         </p>
       </div>
-      <div className="flex pl-auto justify-around border-y border-custom-border-200 py-14 mt-12">
+      <div className="flex pl-auto justify-around border-y border-custom-border-200 py-12 mt-12">
         {footerItems.map((item) => (
           <Link href={item.key} key={item.key}>
             <p className="font-paragraph text-base text-custom-text-100 font-medium hover:text-custom-primary-200 hover:cursor-pointer">
@@ -52,12 +52,14 @@ export const Footer: React.FC = () => {
         ))}
       </div>
       <div className="flex justify-between items-center p-12">
-        <div className="flex items-center hover:cursor-pointer">
-          <Image src={Logo} alt="logo" className="h-10 w-10" />
-          <p className="text-custom-text-200 font-paragraph text-base px-2">
-            Lakhan's Folio
-          </p>
-        </div>
+        <Link href={"/"}>
+          <div className="flex items-center hover:cursor-pointer">
+            <Image src={Logo} alt="logo" className="h-10 w-10" />
+            <p className="text-custom-text-200 font-paragraph text-base px-2">
+              Lakhan's Folio
+            </p>
+          </div>
+        </Link>
         <div className="flex flex-col items-center text-custom-text-200 font-paragraph text-base px-2">
           Built & Designed by
           <p className="hover:underline hover:font-medium hover:cursor-pointer hover:text-custom-primary-200">

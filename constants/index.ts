@@ -1,2 +1,2 @@
 export * from './@me';
-export * from './work-experience';
+export * from './opensource-contributions';

@@ -2,14 +2,11 @@ import Image from "next/image";
 // assets
 import profile from "@/public/profile.jpg";
 // constants
-import { techStack } from "@/constants";
+import { TECHSTACK } from "@/constants";
 
 function About() {
   return (
-    <div
-      className="min-h-[100vh] pb-[200px] pt-[100px] "
-      id="About"
-    >
+    <div className="min-h-[100vh] pb-[200px] pt-[100px] " id="About">
       <div className="text-white">
         <div className="flex font-sans lg:max-w-[850px] md:w-[80%] lg:mx-auto mx-[25px] md:mx-auto text-lightSlate md:text-[28px] text-[24px] font-bold items-center">
           About me
@@ -38,16 +35,16 @@ function About() {
             </p>
             <div className="flex mt-[15px] ml-[15px] text-darkSlate">
               <ul className="mr-[100px] list-disc marker:text-secondaryColor">
-                {techStack.map((techstack) => {
-                  return techStack.indexOf(techstack) < techStack.length / 2 ? (
+                {TECHSTACK.map((techstack) => {
+                  return TECHSTACK.indexOf(techstack) < TECHSTACK.length / 2 ? (
                     <li key={techstack}>{techstack}</li>
                   ) : null;
                 })}
               </ul>
               <ul className="list-disc marker:text-secondaryColor">
-                {techStack.map((techstack) => {
-                  return techStack.indexOf(techstack) >=
-                    techStack.length / 2 ? (
+                {TECHSTACK.map((techstack) => {
+                  return TECHSTACK.indexOf(techstack) >=
+                    TECHSTACK.length / 2 ? (
                     <li key={techstack}>{techstack}</li>
                   ) : null;
                 })}
