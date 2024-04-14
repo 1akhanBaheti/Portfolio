@@ -1,7 +1,7 @@
-export const resumeDriveLink =
+export const RESUME_LINK =
   "https://drive.google.com/file/d/1-Eu4__8axoZdsXjQBmLGhMNR8WQSHz7F/view?usp=share_link";
 
-export const techStack = [
+export const TECHSTACK = [
   {
     title: "C++",
     path: "/techstack/c++.svg",
