@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 // components
-import RedirectIcon from "@/icons/redirect";
+import {RedirectIcon} from "@/icons";
 // constants
 import { repositiories } from "@/constants";
 
@@ -36,7 +36,6 @@ export default function OpensourceContibutionsPage() {
             </p>
           </Link>
           <RedirectIcon
-            href={repo.url}
             className="h-3 w-3 ml-2 stroke-current fill-custom-text-100"
           />
         </div>

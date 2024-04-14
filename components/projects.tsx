@@ -1,8 +1,7 @@
 import myCred from "../../public/svg/my_cred.svg";
 import shopX from "../../public/svg/shopX.svg";
 import fireChat from "../../public/svg/firechat.svg";
-import GithubIcon from "../icons/github";
-import RedirectIcon from "../icons/redirect";
+import {RedirectIcon} from "../icons";
 import Image from "next/image";
 var projects = [
   {
@@ -80,7 +79,7 @@ function ProjectCard() {
         </div>
         <div className="flex mb-[30px]">
           <a rel="noopener noreferrer" target="_blank" className="h-[23px] w-[23px] mt-[30px] transition-all duration-300" href={element.github} title="Github">
-          <GithubIcon />
+          {/* <GithubIcon /> */}
         </a>
         <a rel="noopener noreferrer" target="_blank" className="h-[25px] transition-all duration-300 w-[25px] ml-[30px] mt-[30px]"  href={element.apk} title="APK">
           <RedirectIcon />
@@ -159,7 +158,7 @@ function Project() {
                       })}
                       <div className={"h-[30px] flex  mb-[30px] items-center w-[70px] mt-[10px] transition-all duration-500 " + (index % 2 === 1 ? "mr-auto" : "ml-auto")}>
                         <a rel="noopener noreferrer" target="_blank" className="mr-[25px] hover:mb-[8px] transition-all h-[22px] w-[22px] duration-300" href={item.github} title="Github">
-                          <GithubIcon />
+                          {/* <GithubIcon /> */}
                         </a>
                         <a rel="noopener noreferrer" target="_blank" className="hover:mb-[8px] transition-all duration-300" href={item.apk} title="APK">
                           <RedirectIcon />

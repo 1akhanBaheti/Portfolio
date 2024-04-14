@@ -8,7 +8,7 @@ const ContactMeForm = () => {
         type="text"
         name="name"
         placeholder="John Doe"
-        className="w-full rounded-xl p-2.5 bg-white/95 my-2 font-paragraph font-medium text-sm outline-none"
+        className="w-full rounded-xl p-2.5 bg-white my-2 font-paragraph font-medium text-sm outline-none"
       />
 
       <label className="text-white text-base font-paragraph block mt-4">
@@ -18,7 +18,7 @@ const ContactMeForm = () => {
         type="text"
         name="email"
         placeholder="john@gmail.com"
-        className="w-full rounded-xl p-2.5 bg-white/95 my-2 font-paragraph font-medium text-sm outline-none"
+        className="w-full rounded-xl p-2.5 bg-white my-2 font-paragraph font-medium text-sm outline-none"
       />
 
       <label className="text-white text-base font-paragraph block mt-4">
@@ -28,7 +28,7 @@ const ContactMeForm = () => {
         type="text"
         name="phone"
         placeholder="+91 9111111111"
-        className="w-full rounded-xl p-2.5 bg-white/95 my-2 font-medium text-sm outline-none font-paragraph"
+        className="w-full rounded-xl p-2.5 bg-white my-2 font-medium text-sm outline-none font-paragraph"
       />
 
       <label className="text-white text-base font-paragraph block mt-4">
@@ -38,7 +38,7 @@ const ContactMeForm = () => {
         rows={5}
         name="message"
         placeholder="How can I help you?"
-        className="w-full rounded-xl p-2 bg-white/95 my-2 font-paragraph font-medium text-sm outline-none"
+        className="w-full rounded-xl p-2 bg-white my-2 font-paragraph font-medium text-sm outline-none"
       />
       <button
         type="submit"
