@@ -29,7 +29,7 @@ const footerItems = [
 export const Footer: React.FC = () => {
   return (
     <div className="w-full bg-custom-background-200 pt-20">
-      <div className="mx-auto max-w-[640px] text-center">
+      <div className="mx-auto md:max-w-[640px] md:text-center px-4">
         <h5 className="font-paragraph text-custom-text-100 text-[18px]">
           what's Next ?
         </h5>
@@ -42,18 +42,18 @@ export const Footer: React.FC = () => {
           best to get back to you!
         </p>
       </div>
-      <div className="flex pl-auto justify-around border-y border-custom-border-200 py-12 mt-12">
+      <div className="md:flex pl-auto justify-around border-y border-custom-border-200 py-12 mt-12 px-4">
         {footerItems.map((item) => (
           <Link href={item.key} key={item.key}>
-            <p className="font-paragraph text-base text-custom-text-100 font-medium hover:text-custom-primary-200 hover:cursor-pointer">
+            <p className="font-paragraph text-base text-custom-text-100 font-medium hover:text-custom-primary-200 hover:cursor-pointer py-2">
               {item.title}
             </p>
           </Link>
         ))}
       </div>
-      <div className="flex justify-between items-center p-12">
+      <div className="flex md:justify-between justify-center items-center md:p-12 py-6">
         <Link href={"/"}>
-          <div className="flex items-center hover:cursor-pointer">
+          <div className="hidden md:flex items-center hover:cursor-pointer">
             <Image src={Logo} alt="logo" className="h-10 w-10" />
             <p className="text-custom-text-200 font-paragraph text-base px-2">
               Lakhan's Folio

@@ -8,20 +8,20 @@ import { repositiories } from "@/constants";
 
 export const ContributionsSection = () => {
   return (
-    <div className="flex flex-col items-start py-20 xl:max-w-7xl bg-custom-background-100">
-      <h1 className="font-heading font-bold text-3xl text-custom-text-100 text-center w-full">
+    <div className="px-4 flex flex-col items-start py-20 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl bg-custom-background-100">
+      <h1 className="font-heading font-bold text-3xl text-custom-text-100 md:text-center w-full">
         My opensource contributions
       </h1>
 
-      <p className="w- font-paragraph tracking-tight text-center text-custom-text-200 my-4 mx-auto">
+      <p className="w- font-paragraph tracking-tight md:text-center text-custom-text-200 my-4 mx-auto">
         Here are some of the open source repositories I have contributed to:
       </p>
 
-      <div className="w-[56rem] mt-4">
+      <div className="md:w-[56rem] mt-4">
         {Object.values(repositiories).map((repo) => (
           <div
             key={repo.url}
-            className="flex items-center p-4 border-b border-custom-border-200"
+            className="flex items-center py-4 md:px-4 border-b border-custom-border-200"
           >
             <Link
               href={`/opensource-contributions/@${repo.org}-${repo.name}`}

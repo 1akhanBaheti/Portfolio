@@ -29,7 +29,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`h-full`}>
+      <body className={`h-full min-w-[360px]`}>
         <ThemeProvider attribute="class">
           <Header />
           {children}

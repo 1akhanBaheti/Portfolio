@@ -33,11 +33,11 @@ export const Header = () => {
   const { setTheme } = useTheme();
 
   return (
-    <nav className="bg-custom-background-100 py-5 border-b border-custom-border-200 flex items-center lg:max-w-6xl xl:max-w-[80vw] mx-auto">
+    <nav className="py-5 border-custom-border-200 flex items-center lg:max-w-6xl xl:max-w-[80vw] md:mx-auto px-4">
       <Link href={"/"}>
         <Image src={Logo} alt="logo" className="h-12 w-12 mr-20" />
       </Link>
-      <div className="flex gap-x-12 pl-auto justify-end mr-auto">
+      <div className="hidden md:flex gap-x-12 pl-auto justify-end mr-auto">
         {navItems.map((item) => (
           <Link href={item.href}>
             <p
@@ -49,7 +49,7 @@ export const Header = () => {
           </Link>
         ))}
       </div>
-      <div className="p-2 hover:bg-custom-background-200 rounded-full">
+      <div className="p-2 hover:bg-custom-background-200 rounded-full ml-auto">
         <MoonStar
           onClick={() => setTheme("dark")}
           className="hover:cursor-pointer dark:hidden"
@@ -60,7 +60,7 @@ export const Header = () => {
         />
       </div>
 
-      <div className="px-4 py-3 bg-[#1D4ED8] rounded-full mx-6 text-white font-medium">
+      <div className="flex-shrink-0 px-4 py-3 bg-[#1D4ED8] rounded-full mx-6 text-white font-medium hidden md:block">
         Hire me
       </div>
     </nav>

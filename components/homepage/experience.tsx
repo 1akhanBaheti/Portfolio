@@ -6,11 +6,11 @@ import { EXPERIENCE_LITE } from "@/constants";
 export const ExperienceSection = () => {
   return (
     <div className="flex flex-col items-center h-full w-full mx-auto bg-custom-background-200 py-20">
-      <div className="flex flex-col items-center h-full w-full mx-auto xl:max-w-4xl bg-custom-background-200">
-        <h1 className="font-heading font-bold text-3xl text-custom-text-100 w-full text-center">
+      <div className="px-4 flex flex-col items-center h-full w-full mx-auto xl:max-w-4xl bg-custom-background-200">
+        <h1 className="font-heading font-bold text-3xl text-custom-text-100 w-full md:text-center">
           Proffessional Experience
         </h1>
-        <p className="text-custom-text-200 tracking-tight font-paragraph xl:max-w-xl text-center my-4 mb-16">
+        <p className="text-custom-text-200 tracking-tight font-paragraph xl:max-w-xl md:text-center my-4 mb-16">
           Deeply appreciative of the companies that have granted me the
           opportunity to collaborate and collectively shape products that evoke
           a sense of pride every time they come to mind.

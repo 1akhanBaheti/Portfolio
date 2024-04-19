@@ -8,16 +8,16 @@ import { GithubIcon, RedirectIcon } from "@/icons";
 export const ProjectsSection = () => {
   return (
     <div className="flex flex-col items-center h-full w-full mx-auto bg-custom-background-200 py-20">
-      <div className="flex flex-col items-center h-full w-full mx-auto xl:max-w-5xl bg-custom-background-200">
-        <h1 className="font-heading font-bold text-3xl text-custom-text-100 w-full text-center mb-6">
+      <div className="px-4 flex flex-col items-center h-full w-full mx-auto xl:max-w-5xl bg-custom-background-200">
+        <h1 className="font-heading font-bold text-3xl text-custom-text-100 w-full md:text-center mb-6">
           Featured Projects
         </h1>
 
-        <div className="grid grid-cols-2">
+        <div className="grid md:grid-cols-2">
           {PROJECTS_LITE.map((project) => (
             <div
               key={project.title}
-              className="flex flex-col items-center justify-center my-6 mr-6 bg-custom-background-100 rounded-xl"
+              className="flex flex-col items-center justify-center my-6 md:mr-6 bg-custom-background-100 rounded-xl"
             >
               <Image
                 src={project.image}
