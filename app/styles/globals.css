@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./theme.css");
+
+@font-face {
+  font-family: "Trap Black";
+  src: url("../../public/fonts/Trap-Black.otf");
+}
+
+:root {
+  scroll-behavior: smooth;
+  --foreground-rgb: 0, 0, 0;
+  background-color: var(--background-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-200);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--background-200);
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
