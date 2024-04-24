@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 import { MoonStar, Sun } from "lucide-react";
-import Logo from "@/public/logo.svg";
+import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "next-themes";
+// assets
+import Logo from "@/public/logo.svg";
 
 const navItems = [
   {
@@ -39,9 +40,8 @@ export const Header = () => {
       </Link>
       <div className="hidden md:flex gap-x-12 pl-auto justify-end mr-auto">
         {navItems.map((item) => (
-          <Link href={item.href}>
+          <Link key={item.key} href={item.href}>
             <p
-              key={item.key}
               className="font-paragraph text-base text-custom-text-200 font-medium hover:text-custom-primary-200 hover:cursor-pointer"
             >
               {item.title}

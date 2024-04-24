@@ -1,7 +1,4 @@
 import React from "react";
-import Image from "next/image";
-// assets
-import notFoundBackground from "@/public/not-found.svg";
 import Link from "next/link";
 
 export default function Custom404() {
@@ -11,7 +8,7 @@ export default function Custom404() {
         <h1 className="font-heading text-[170px]">404</h1>
         <h1 className="font-heading text-4xl">We searched far and wide.</h1>
         <p className="font-paragraph text-base tracking-tight py-4 text-center">
-          We couldn't find what you were looking for. But you can go back to the
+          We couldn’t find what you were looking for. But you can go back to the
           Home page to explore the rest of the website!
         </p>
         <Link href="/">

@@ -1,14 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-// components
-import {RedirectIcon} from "@/icons";
+import Link from "next/link";
 // constants
 import { repositiories } from "@/constants";
+// components
+import { RedirectIcon } from "@/icons";
 
-export const ContributionsSection = () => {
-  return (
-    <div className="px-4 flex flex-col items-start py-20 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl bg-custom-background-100">
+export const ContributionsSection = () => (
+  <div className="w-full bg-custom-background-100">
+    <div className="px-4 flex flex-col items-center py-20 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl md:mx-auto">
       <h1 className="font-heading font-bold text-3xl text-custom-text-100 md:text-center w-full">
         My opensource contributions
       </h1>
@@ -17,23 +17,11 @@ export const ContributionsSection = () => {
         Here are some of the open source repositories I have contributed to:
       </p>
 
-      <div className="md:w-[56rem] mt-4">
+      <div className="md:w-[56rem] mt-4 w-full">
         {Object.values(repositiories).map((repo) => (
-          <div
-            key={repo.url}
-            className="flex items-center py-4 md:px-4 border-b border-custom-border-200"
-          >
-            <Link
-              href={`/opensource-contributions/@${repo.org}-${repo.name}`}
-              className="flex items-center w-fit"
-            >
-              <Image
-                src={repo.avatar}
-                alt="github"
-                width={24}
-                height={24}
-                className="rounded-md"
-              />
+          <div key={repo.url} className="flex items-center py-4 md:px-4 border-b border-custom-border-200">
+            <Link href={`/opensource-contributions/@${repo.org}-${repo.name}`} className="flex items-center w-fit">
+              <Image src={repo.avatar} alt="github" width={24} height={24} className="rounded-md" />
               <p className="ml-2 font-medium font-paragraph tracking-tight text-custom-text-100 hover:underline">
                 @{repo.org}/{repo.name}
               </p>
@@ -57,5 +45,5 @@ export const ContributionsSection = () => {
         </div>
       </Link>
     </div>
-  );
-};
+  </div>
+);

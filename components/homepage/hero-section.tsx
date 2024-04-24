@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-// components
-import { AnimatedTechStack } from "./animated-techstack";
 // constants
 import { RESUME_LINK } from "@/constants";
 // assets
 import GridDark from "@/public/svg/grid-dark.svg";
-import GridLight from "@/public/svg/grid-dark.svg";
+import GridLight from "@/public/svg/grid-light.svg";
+// components
+import { AnimatedTechStack } from "./animated-techstack";
 
 export function HeroSection() {
   return (
@@ -24,7 +24,7 @@ export function HeroSection() {
       <div className="min-h-[90vh] pt-20 h-fit flex items-center my-auto md:max-w-4xl lg:max-w-5xl xl:max-w-7xl mx-auto overflow-x-hidden hide-scrollbar">
         <div className="flex flex-col">
           <h1 className="font-heading text-custom-text-100 tracking-[0.3px] lg:text-[50px] sm:text-[40px] text-[38px] font-bold mb-[4px] leading-none md:text-center text-left px-4">
-            I'm Lakhan.
+            I’m Lakhan.
           </h1>
           <h6 className="font-heading text-custom-primary-200 font-extrabold tracking-[0.2px] lg:text-[65px] sm:text-[50px] text-[38px] lg:leading-[65px] sm:leading-[50px] leading-[42px] mt-[8px] md:max-w-2xl lg:max-w-3xl xl:max-w-4xl md:text-center px-4 mx-auto">
             I build things for web & mobile.

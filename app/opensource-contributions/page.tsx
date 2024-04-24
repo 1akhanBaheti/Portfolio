@@ -1,10 +1,10 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-// components
-import {RedirectIcon} from "@/icons";
+import Link from "next/link";
 // constants
 import { repositiories } from "@/constants";
+// components
+import {RedirectIcon} from "@/icons";
 
 export default function OpensourceContibutionsPage() {
   return (

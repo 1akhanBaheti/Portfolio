@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import "@/app/styles/globals.css";
 // components
-import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/footer";
+import { Header } from "@/components/header/header";
 
 export const metadata: Metadata = {
-  title: "Lakhan's Portfolio",
+  title: "Lakhan’s Portfolio",
 };
 
 export default function RootLayout({

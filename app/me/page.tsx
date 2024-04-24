@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-// assets
-import profile from "@/public/profile.jpg";
 // constants
 import { TECHSTACK } from "@/constants";
+// assets
+import profile from "@/public/profile.jpg";
 
 export default function AboutMe() {
   return (
@@ -13,10 +13,10 @@ export default function AboutMe() {
         <div className="mr-10 pt-8">
           <h2 className="font-raleway font-bold text-xl">Introduction:</h2>
           <p className="text-custom-text-200 font-paragraph text-base pt-1">
-            Hello! I'm Lakhan, an enthusiastic creator in the realm of digital
+            Hello! I&apos;m Lakhan, an enthusiastic creator in the realm of digital
             innovation. My journey into the world of app development commenced
             in 2020, during my pursuit of a B.Tech in computer science. Since
-            then, I've been captivated by the endless possibilities that the
+            then, I&apos;ve been captivated by the endless possibilities that the
             internet offers.
           </p>
           <h2 className="font-raleway font-bold text-xl mt-6">
@@ -66,7 +66,7 @@ export default function AboutMe() {
           </h2>
           <p className="text-custom-text-200 font-paragraph text-base pt-1">
             Inspired by the intricacies of app development, I transitioned to
-            web development to ensure the stability and success of Plane's web
+            web development to ensure the stability and success of Plane&apos;s web
             application for its inaugural release. My journey began with
             React.js and progressed to Next.js, granting me invaluable insights
             into the nuances of web development.
@@ -106,7 +106,7 @@ export default function AboutMe() {
           <div className="flex mb-12 pt-2">
             <ul className="flex justify-left gap-x-4 flex-wrap">
               {TECHSTACK.map((techstack) => (
-                <div className="p-2 bg-custom-background-200 shadow-sm  rounded-xl my-2">
+                <div key={techstack.path} className="p-2 bg-custom-background-200 shadow-sm  rounded-xl my-2">
                   <Image
                     src={techstack.path}
                     alt={techstack.title}
