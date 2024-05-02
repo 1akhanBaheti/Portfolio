@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// conatants
+// constants
 import { PROJECTS_LITE } from "@/constants";
 import { GithubIcon, RedirectIcon } from "@/icons";
 
@@ -32,9 +32,7 @@ export const ProjectsSection = () => (
                   {project.title}
                 </h2>
               </Link>
-              <p className="text-[15px] font-paragraph font-medium tracking-tight leading-[18px] text-custom-text-200 py-2">
-                {project.description}
-              </p>
+              <p className="text-base font-paragraph leading-[22px] text-custom-text-200 py-2">{project.description}</p>
               <div className="flex gap-x-4 justify-end items-center">
                 <GithubIcon className="text-custom-text-100 stroke-current fill-custom-primary-100 h-5 w-5 hover:text-custom-primary-200 my-4" />
                 <Link href={project.github}>
@@ -45,6 +43,13 @@ export const ProjectsSection = () => (
           </div>
         ))}
       </div>
+
+      <Link
+        className="mx-auto flex items-center border border-custom-border-200 hover:bg-custom-text-100 text-base font-bold font-raleway mt-10 h-[65px] px-[25px] text-custom-text-100 hover:text-custom-background-100 rounded-lg"
+        href="/projects"
+      >
+        Explore all projects
+      </Link>
     </div>
   </div>
 );
