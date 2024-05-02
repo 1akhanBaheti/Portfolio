@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://portfolio.lakhan.xyz/favicon.ico" width="100" />
+</div>
+<h1 align="center">
+ Welcome to lakhan.xyz - version 2!
+</h1>
+<p align="center">
+lakhan.xyz has undergone several transformations, each one pushing the boundaries of design and technology. Version 2 represents the culmination of my dedication to creating a seamless online experience. Join us as we explore the evolution of this project through its previous versions: <a href="" target="_blank">v1</a>.
+</p>
 
-## Getting Started
 
-First, run the development server:
+![demo](https://github.com/1akhanBaheti/Portfolio/assets/94619783/c03f5000-b145-4632-99c7-e9b58bc01bb0)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚨 Usage Notice
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Thank you for choosing to use [@1akhanBaheti/Portfolio](https://github.com/1akhanBaheti/Portfolio/) This open-source portfolio is made available under the MIT license. You are free to use, modify, and distribute this portfolio for personal and commercial purposes, provided you give appropriate credit to the original creator.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+If you find this portfolio helpful or use it in your project, we kindly request that you give credit by linking back to the original repository: [portfolio - v2](https://github.com/1akhanBaheti/Portfolio/)
 
-## Learn More
+Your support and acknowledgment are greatly appreciated!
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🛠 Get Started
+Ready to explore? Follow these steps to get started:<br/>
+1. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
 
-## Deploy on Vercel
+   ```sh
+   nvm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```sh
+   yarn
+   ```
+
+3. Start the development server
+
+   ```sh
+   yarn dev
+   ```
+
+## ❤️ Contributions:
+Contributions are welcome! If you spot any issues or have ideas for improvements, feel free to open an issue or submit a pull request on the GitHub repository. Your feedback helps make [lakhan.xyz](https://lakhan.xyz) even better for everyone.
+
