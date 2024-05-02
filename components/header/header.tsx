@@ -3,10 +3,10 @@ import React from "react";
 import { MoonStar, Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 // assets
 import Logo from "@/public/logo.svg";
-import { usePathname } from "next/navigation";
 
 const navItems = [
   {
