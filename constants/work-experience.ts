@@ -1,4 +1,4 @@
-export const workExperience = [
+export const WORK_EXPERIENCE = [
   {
     key: "caravel-tech",
     role: "Software Developer Intern",

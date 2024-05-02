@@ -1,22 +1,21 @@
 "use client";
 import React, { useState } from "react";
 // constants
-import { workExperience } from "@/constants";
+import { WORK_EXPERIENCE } from "@/constants";
 import Link from "next/link";
 
 export default function WorkExperiencePage() {
   const [selectedWork, setSelectedWork] = useState(0);
-  const work = workExperience[selectedWork];
+  const work = WORK_EXPERIENCE[selectedWork];
 
   return (
     <div className="max-w-7xl mx-auto flex flex-col justify-center">
-      <div>
-        <h1 className="font-heading text-3xl font-bold my-10">Work Experience</h1>
-      </div>
+    
+      <h1 className="font-heading text-4xl font-bold my-10 border-custom-border-200">Work Experience</h1>
 
       <div className="flex justify-center mt-16 mb-24">
         <div className="mr-10">
-          {workExperience.map((work, index) => {
+          {WORK_EXPERIENCE.map((work, index) => {
             return (
               <div
                 onClick={() => setSelectedWork(index)}
